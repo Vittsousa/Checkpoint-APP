@@ -1,6 +1,5 @@
 public class MediaMessage : MessgaeBase
 {
-    public File file { get; set; }
     MediaMessage(string message) : base(message) { }
 }
 
