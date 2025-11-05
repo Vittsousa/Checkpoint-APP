@@ -1,23 +1,11 @@
-public class Instagram 
+using System;
+
+public class Instagram
 {
-    public void EnviarMensagem(string numero, TextMessage message)
+    public void EnviarMensagem(string usuario, Mensagem mensagem)
     {
-        Console.WriteLine($"Enviando mensagem de texto para o numero {numero}");
+        Console.WriteLine($"[INSTAGRAM] Enviando mensagem para o usuário: @{usuario}");
+        mensagem.ExibirDetalhes();
+        Console.WriteLine("-------------------------------------");
     }
-
-    public void EnviarMensagem(string numero, VideoMessage message)
-    {
-        Console.WriteLine($"Enviando mensagem de video para o numero {numero}");
-    }
-
-    public void EnviarMensagem(string numero, PhotoMessage message)
-    {
-        Console.WriteLine($"Enviando mensagem de foto para o numero {numero}");
-    }
-
-    public void EnviarMensagem(string numero, FileMessage message)
-    {
-        Console.WriteLine($"Enviando mensagem de arquivo para o numero {numero}");
-    }
-
 }

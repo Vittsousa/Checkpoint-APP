@@ -1,11 +1,14 @@
-public abstract class Messagebase
+using System;
+
+public abstract class MessageBase
 {
-    protected Messagebase(string message)
+    protected MessageBase(string message)
     {
         Message = message;
         SendAt = DateTime.Now;
     }
 
     public string Message { get; }
+
     public DateTime SendAt { get; }
 }

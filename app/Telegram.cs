@@ -1,23 +1,18 @@
-public class Telegram 
+using System;
+
+public class Telegram
 {
-    public void EnviarMensagem(string numero, TextMessage message)
+    public void EnviarMensagemPorNumero(string numero, Mensagem mensagem)
     {
-        Console.WriteLine($"Enviando mensagem de texto para o numero {numero}");
+        Console.WriteLine($"[TELEGRAM - Número] Enviando mensagem para o número: {numero}");
+        mensagem.ExibirDetalhes();
+        Console.WriteLine("-------------------------------------");
     }
 
-    public void EnviarMensagem(string numero, VideoMessage message)
+    public void EnviarMensagemPorUsuario(string usuario, Mensagem mensagem)
     {
-        Console.WriteLine($"Enviando mensagem de video para o numero {numero}");
+        Console.WriteLine($"[TELEGRAM - Usuário] Enviando mensagem para o usuário: @{usuario}");
+        mensagem.ExibirDetalhes();
+        Console.WriteLine("-------------------------------------");
     }
-
-    public void EnviarMensagem(string numero, PhotoMessage message)
-    {
-        Console.WriteLine($"Enviando mensagem de foto para o numero {numero}");
-    }
-
-    public void EnviarMensagem(string numero, FileMessage message)
-    {
-        Console.WriteLine($"Enviando mensagem de arquivo para o numero {numero}");
-    }
-
 }

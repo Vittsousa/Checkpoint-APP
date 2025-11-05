@@ -1,8 +1,13 @@
-public class TextMessage : MessageBase
+using System;
+
+public class TextMessage : Mensagem
 {
-    public TextMessage(string message)
-        :base(message)
-        {
-            
-        }
+    public TextMessage(string conteudo) : base(conteudo)
+    {
+    }
+
+    public override void ExibirDetalhes()
+    {
+        Console.WriteLine($"[Texto] {Conteudo} - Enviado em {DataEnvio}");
+    }
 }

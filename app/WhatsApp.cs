@@ -1,23 +1,23 @@
 public class WhatsApp
 {
-    public void EnviarMensagem(string numero, TextMessage message)
+public void EnviarMensagem(string numero, TextMessage mensagem)
     {
-        Console.WriteLine($"Enviando mensagem de texto para o numero {numero}");
+        Console.WriteLine($"Enviar mensagem de texto para o número {numero}");
     }
 
-    public void EnviarMensagem(string numero, VideoMessage message)
+        public void EnviarMensagem(string numero, VideoMessage mensagem )
     {
-        Console.WriteLine($"Enviando mensagem de video para o numero {numero}");
+        Console.WriteLine($"Enviar mensagem de video para o número {numero}");
     }
 
-    public void EnviarMensagem(string numero, PhotoMessage message)
+            public void EnviarMensagem(string numero, PhotoMessage mensagem)
     {
-        Console.WriteLine($"Enviando mensagem de foto para o numero {numero}");
+        Console.WriteLine($"Enviar mensagem de foto para o número {numero}");
     }
 
-    public void EnviarMensagem(string numero, FileMessage message)
+            public void EnviarMensagem(string numero, FileMessage mensagem)
     {
-        Console.WriteLine($"Enviando mensagem de arquivo para o numero {numero}");
+        Console.WriteLine($"Enviar mensagem de arquivo para o número {numero}");
     }
 
 }
